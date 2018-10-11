@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+section > article {
+    background-color: #333;
+    border-radius: 10px;
+    color: #f5f5f5;
+    display: flex;
+    width: 280px;
+    flex-wrap: wrap;
+}
+section > article > div {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 30px;
+    color: #f5f5f5bf
+}
+section > article > button {
+    flex: 1 1 25%;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+section > article > button:hover {
+    background-color: rgb(240, 240, 240, .9);
+}
+section > article > button.take-2 {
+    flex-basis: 50%;
+}
+section > article > button.take-3 {
+    flex-basis: 75%;
+}
+section > article > button:nth-child(4n),
+section > article > button:last-child {
+    background-color: peru;
+    color: #f5f5f5;
+}
+section > article > button:nth-child(4n):hover,
+section > article > button:last-child:hover {
+    background-color: rgb(205, 133, 63, .9);
+}
